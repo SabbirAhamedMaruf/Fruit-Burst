@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css' integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==' crossorigin='anonymous'/>
 
 </head>
-<body style="font-family: 'Lato', sans-serif;">
+<body class="container m-auto" style="font-family: 'Lato', sans-serif;">
     <header>
         <!-- Header section -->
         <section>
@@ -47,11 +47,11 @@
 
             <!-- Desktop Nav -->
             <div class="hidden lg:block">
-                <div class="navbar lg:mt-10 lg:w-10/12 lg:m-auto lg:bg-[#F85559] rounded-full  lg:text-white">
+                <div class="navbar mt-[50px] bg-[#F85559] rounded-full text-white">
 
                     <!-- Desktop menu -->
-                    <nav class="hidden lg:block">
-                        <ul class="flex gap-x-6 pl-12">
+                    <nav>
+                        <ul class="flex gap-x-6 pl-5">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Shop</a></li>
@@ -67,15 +67,52 @@
     
                     <!-- Search bar -->
                     <div class="form-control flex-1 hidden lg:block relative">
-                        <input  type="text" placeholder="Search here" class="lg:w-[400px] lg:pr-0 rounded-full input input-bordered md:w-auto" />
-                        <i class="fa-solid fa-magnifying-glass text-[gray] absolute top-4 right-20" style="cursor: pointer;"></i>
+                        <input  type="text" placeholder="Search here" class="lg:w-[400px] lg:pr-0 rounded-full input input-bordered md:w-auto text-black" />
+                        <i class="fa-solid fa-magnifying-glass text-[gray] absolute top-4 right-10" style="cursor: pointer;"></i>
                     </div>
                   </div>
             </div>
         </section>
     </header>
-    <main>
-
+    <main class="lg:my-14">
+        <!-- Banner section -->
+        <section class="w-11/12 m-auto lg:w-full relative">
+            <!-- Background image -->
+            <div class="hero md:h-[300px] lg:h-[600px] z-0 " style="background-image: url(./images/banner4.png); border-radius: 8px;">
+                <!-- Background overlay -->
+                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <!-- Background content -->
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-2xl text-white">
+                    <h1 class="mb-5 text-3xl md:text-4xl lg:text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5 text-[14px] md:text-[16px] lg:text-lg font-medium">We supply highly quality organic products</p>
+                    <button class="btn px-8 py-4 normal-case text-sm font-extrabold text-white bg-[#F85559] border-none">Shop Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-around items-center w-4/5 p-6 rounded-md z-10 absolute left-40 -bottom-[90px] bg-white shadow-2xl">
+                <div class="text-center">
+                    <img src="./images/fruit1.png" alt="">
+                    <h3 class="text-[20px] font-medium">Grapes</h3>
+                </div>
+                <div class="text-center">
+                    <img src="./images/fruit2.png" alt="">
+                    <h3 class="text-[20px] font-medium">Orange</h3>
+                </div>
+                <div class="text-center">
+                    <img src="./images/fruit3.png" alt="">
+                    <h3 class="text-[20px] font-medium">Mango</h3>
+                </div>
+                <div class="text-center">
+                    <img src="./images/fruit4.png" alt="">
+                    <h3 class="text-[20px] font-medium">Strawberry</h3>
+                </div>
+                <div class="text-center">
+                    <img src="./images/fruit5.png" alt="">
+                    <h3 class="text-[20px] font-medium">Pomegranate</h3>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
