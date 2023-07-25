@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+
+    <!-- Integrating tailwind css and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Integrating google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Integrating font awesome icon -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css' integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==' crossorigin='anonymous'/>
+
+</head>
+<body style="font-family: 'Lato', sans-serif;">
+    <header>
+        <!-- Header section -->
+        <section>
+            <!-- Mobile Nav -->
+            <div class="flex justify-between items-center lg:hidden px-10 py-5">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-6 w-3/4">
+                    <img class="w-10" src="./images/logo.png" alt="">
+                    <span><a class="text-2xl font-bold" href="#">Fruit Burst</a></span>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="navbar-start">
+                    <div class="flex justify-end dropdown">
+                      <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <i class="fa-solid fa-bars"></i>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-10 mr-4 z-[1] px-4 shadow bg-base-100 rounded-md bg-gray-100">
+                        <li><a class="font-bold">Homepage</a></li>
+                        <li><a class="font-bold">Portfolio</a></li>
+                        <li><a class="font-bold">About</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:block">
+                <div class="navbar lg:mt-10 lg:w-10/12 lg:m-auto lg:bg-[#F85559] rounded-full  lg:text-white">
+
+                    <!-- Desktop menu -->
+                    <nav class="hidden lg:block">
+                        <ul class="flex gap-x-6 pl-12">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">All Fruits</a></li>
+                        </ul>
+                    </nav>
+    
+                    <!-- Logo -->
+                    <div class="lg:w-[810px] justify-center gap-x-6">
+                      <img src="./images/logo.png" alt="">
+                      <h1><a class="text-4xl font-bold" href="#">Fruit Burst</a></h1>
+                    </div>
+    
+                    <!-- Search bar -->
+                    <div class="form-control flex-1 hidden lg:block relative">
+                        <input  type="text" placeholder="Search here" class="lg:w-[400px] lg:pr-0 rounded-full input input-bordered md:w-auto" />
+                        <i class="fa-solid fa-magnifying-glass text-[gray] absolute top-4 right-20" style="cursor: pointer;"></i>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
